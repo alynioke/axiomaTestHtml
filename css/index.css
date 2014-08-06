@@ -13,12 +13,22 @@ a {
 a:hover {
 	text-decoration: underline;
 }
+
+
+@font-face {
+    font-family: companyFont;
+    src: url(defaultgothicbgauge-webfont.ttf);
+}
+@font-face {
+    font-family: normalFont;
+    src: url(SohoGothicPro-Regular.otf);
+}
+
+
 .heading, .nav a{
 	color: #468fc5;
 }
-.appType, .emText, .stText, .heading, label, .copyright{
-	font-family: companyFont, normalFont;
-}
+
 .mainHeader{
 	width: 922px;
 	margin:0px auto;
@@ -67,7 +77,7 @@ a:hover {
 	height: 210px;
 	padding-top: 36px;
 }
-.appTypes > div {
+.appTypeContainer, .appTypeHeader, .content {
 	width:922px;
 	margin:0px auto;
 	text-align: center;
@@ -78,16 +88,133 @@ a:hover {
 	color: white;
 	text-shadow:2px 2px 4px #42789b;
 	font-weight: bold;
-	height: 20px;
+	height: 65px;
 	letter-spacing: 0.015em;
 }
 
-@font-face {
-    font-family: companyFont;
-    src: url(defaultgothicbgauge-webfont.ttf);
+.content {
+	margin-top:28px;
+	text-align: justify;
 }
-@font-face {
-    font-family: normalFont;
-    src: url(SohoGothicPro-Regular.otf);
+.main {
+	width: 604px;
+	font-size: 15px;
+	/*word-spacing: -0.1em;*/
+}
+.emText {
+	padding:37px 64px 37px 64px;
+	font-size: 17px;
+	text-align: center;
+}
+.stText{
+	font-size: 17px;
+	text-align: center;
+	background-color: #4e97c9;
+	color: white;
+	text-shadow:2px 2px 4px #42789b;
+	padding:13px 30px 13px 37px;
 }
 
+.stTextContainer{
+	padding:37px 35px;
+}
+
+.button{
+	background-image: url(../img/buttonBcg.png);
+	background-repeat: repeat-x;
+	height: 29px;
+	width: auto;
+	padding:2px 4px;
+}
+
+.button::before{
+	background-image: url(../img/buttonBefore.png);
+	content: " ";
+	height: 29px;
+	width: 3px;
+	position: absolute;
+	margin: -2px 0 0 -7px;
+}
+
+.button::after{
+	background-image: url(../img/buttonAfter.png);
+	content: " ";
+	height: 29px;
+	width: 3px;
+	position: absolute;
+	margin: -2px 0 0 4px;
+}
+
+
+.button:hover{
+	background-image: url(../img/buttonBcgOver.png);
+}
+.button:active{
+	background-image: url(../img/buttonBcgClick.png);
+}
+
+.button:hover::before{
+	background-image: url(../img/buttonBeforeOver.png);
+}
+.button:hover::after{
+	background-image: url(../img/buttonAfterOver.png);
+}
+.button:active::before{
+	background-image: url(../img/buttonBeforeClick.png);
+}
+.button:active::after{
+	background-image: url(../img/buttonAfterClick.png);
+}
+
+
+.appTypeOutside {
+	width:102px;
+	height: 102px;
+	padding:3px;
+	border:1px solid transparent;
+    border-radius: 54px;
+}
+.appTypeOutside:hover{
+    background-color: rgba(255, 255, 255, 0.5); /*#4f99cc; */
+	border:1px solid #b2b2b2;
+}
+
+.appTypeInside {
+	width:100px;
+	height: 100px;
+	border:1px solid #d0d0d0;
+    background-color: white;
+    border-radius: 50px;
+}
+
+
+.appTypeInside > a {
+	color: black;
+	font-size: 15px;
+}
+.appType {
+	height:150px;
+	width:112px;
+	float:left;
+	margin:0px 97px;
+}
+
+
+
+.sidebar {
+	width: 248px;
+	margin-left:70px;
+}
+
+.main, .sidebar {
+	float: left;
+}
+.footer {
+	clear: both;
+}
+
+.heading {
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+}

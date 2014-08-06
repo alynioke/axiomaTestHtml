@@ -1,0 +1,90 @@
+body {
+	margin:0px;
+	padding: 0px;
+}
+
+body {
+	font-family: normalFont;
+}
+
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.heading, .nav a{
+	color: #468fc5;
+}
+.appType, .emText, .stText, .heading, label, .copyright{
+	font-family: companyFont, normalFont;
+}
+.mainHeader{
+	width: 922px;
+	margin:0px auto;
+	height: 55px;
+	padding-top: 31px;
+	padding-bottom: 12px;
+}
+.logo {
+	text-transform: uppercase;
+	font-size:23px;
+	color: #8b8988;
+	float: left;
+	height: 55px;
+}
+.logoImg {
+	width: 122px;
+	height: 55px;
+}
+.nav {
+	height: 25px;
+	font-size: 15px;
+	float:right;
+}
+.nav > ul {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+.nav > ul > li {
+	float:left;
+}
+.nav > ul > li.active a {
+	background-color: #d5d5d5;
+	color: #5a5a59;
+}
+.nav > ul > li > a{
+	padding:7px 8px 8px 13px;
+	width: 80px;
+}
+
+.appTypes {
+	background-image: url(../img/appTypesBcg.png);
+	background-color: #66aed5;
+	background-repeat: repeat-x;
+	height: 246px;
+	padding-top: 36px;
+}
+.appTypes > div {
+	width:922px;
+	margin:0px auto;
+	text-align: center;
+}
+
+.appTypeHeader {
+	font-size: 29px;
+	color: white;
+	text-shadow:2px 2px 4px #42789b;
+	font-weight: bold;
+}
+
+@font-face {
+    font-family: companyFont;
+    src: url(defaultgothicbgauge-webfont.ttf);
+}
+@font-face {
+    font-family: normalFont;
+    src: url(SohoGothicPro-Regular.otf);
+}
+

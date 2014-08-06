@@ -28,19 +28,21 @@ a:hover {
 }
 .logo {
 	text-transform: uppercase;
-	font-size:23px;
+	font-size:21px;
 	color: #8b8988;
 	float: left;
 	height: 55px;
 }
-.logoImg {
-	width: 122px;
-	height: 55px;
+.logoText{
+	position: relative;
+	top: -20px;
 }
 .nav {
 	height: 25px;
 	font-size: 15px;
 	float:right;
+	padding-top: 14px;
+	text-transform: capitalize;
 }
 .nav > ul {
 	list-style:none;
@@ -55,15 +57,14 @@ a:hover {
 	color: #5a5a59;
 }
 .nav > ul > li > a{
-	padding:7px 8px 8px 13px;
+	padding:1px 7px 3px 12px;
 	width: 80px;
 }
 
 .appTypes {
 	background-image: url(../img/appTypesBcg.png);
-	background-color: #66aed5;
 	background-repeat: repeat-x;
-	height: 246px;
+	height: 210px;
 	padding-top: 36px;
 }
 .appTypes > div {
@@ -77,6 +78,8 @@ a:hover {
 	color: white;
 	text-shadow:2px 2px 4px #42789b;
 	font-weight: bold;
+	height: 20px;
+	letter-spacing: 0.015em;
 }
 
 @font-face {

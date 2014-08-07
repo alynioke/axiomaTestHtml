@@ -9,7 +9,7 @@ body {
 	left:32px;
 }
 body {
-	font-family: normalFont;
+	font-family: normalFont, normalFonte;
 }
 
 a {
@@ -20,14 +20,12 @@ a:hover {
 }
 
 
-@font-face {
-    font-family: companyFont;
-    src: url(defaultgothicbgauge-webfont.ttf);
+
+@font-face{
+  font-family:'normalFont';
+  src:  url('SohoGothicPro-Regular.otf') format('opentype'); /* tricky! */
 }
-@font-face {
-    font-family: normalFont;
-    src: url(SohoGothicPro-Regular.otf);
-}
+
 
 
 .heading, .nav a{

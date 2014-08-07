@@ -1,4 +1,5 @@
 function submit() {
+
 	var validated = true;
 	var textPattern = /([a-zA-Z])+/;
 	var name = document.getElementById('name');
@@ -28,7 +29,8 @@ function submit() {
 
 	if (validated) {
 		error.className = "errorMsg";
-		return true;
+
+		return true; //submit form
 	}  
 
 	error.className += " " + " visible";

@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title>DOT44 Software studio</title>
 		<link rel="stylesheet" href="css/index.css">
+		<script type="text/javascript" src="index.js"></script>
 	</head>
 	<body>
 		<div class="mainHeader">
@@ -100,13 +101,18 @@
 				<div class="requestForm">
 					<div class="heading">Resuest for quote</div>
 					<form class="form">
-						<label>Your Name:</label>
-						<input class="input" type="text" name="name"/>
-						<label>E-mail</label>
-						<input class="input" type="text" name="name"/>
-						<label>Message</label>
-						<textarea class="input textarea" name="name"></textarea>
-						<div class="button right">SEND</div>
+						<label for="name">Your Name:</label>
+						<input class="input" type="text" name="name" id="name"/>
+						<label for="email">E-mail</label>
+						<input class="input" type="text" name="email" id="email"/>
+						<label for="text">Message</label>
+						<textarea class="input textarea" name="text" id="text"></textarea>
+						<div class="errorMsg hidden" id="errorMsg">
+							<div>Error</div>
+							Description text goes here
+
+						</div>
+						<div class="button right" onclick="return submit();">SEND</div>
 					</form>
 				</div>
 				<div class="testimonials">

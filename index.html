@@ -1,179 +1,139 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>DOT44 Software studio</title>
-		<link rel="stylesheet" href="css/index.css">
-		<script type="text/javascript" src="index.js"></script>
-	</head>
-	<body>
-		<div class="mainHeader">
-			<div class="logo">
-				<img src="img/logo.png" alt="Dot44 Software studio" />
-				<span class="logoText">Software studio</span>
-			</div>
-			<div class="nav">
-				<ul>
-					<li class="active">
-						<a href="#">Home</a>
-					</li>
-					<li>
-						<a href="#">Services</a>
-					</li>
-					<li>
-						<a href="#">Company</a>
-					</li>
-					<li>
-						<a href="#">Careers</a>
-					</li>
-					<li>
-						<a href="#">Contact us</a>
-					</li>
-				</ul>	
-			</div>
+<head>
+	<title>DOT44 SOFTWARE STUDIO</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<!--[if lt IE 9]>
+	<style type="text/css">
+	 .sNavImage {
+	  border: none;
+	}</style>
+	<![endif]-->
+</head>
+<body>
+	<div class="header">
+		<div class="logoContainer">
+			<img src="img/logo.png" alt="" class="logo">
+			<span class="logoText">SOFTWARE STUDIO</span>
 		</div>
-		<div class="appTypes">
-			<div class="appTypeHeader">European Mobile Application Development Company</div>
-			<div class="appTypeContainer">
-				<div class="appType">
-					<div class="appTypeOutside">
-						<div class="appTypeInside">
-							<a href="#">
-								<img src="img/businessApps.png" alt="Business Apps"/>
-							</a>
+		<ul class="nav">
+			<li class="navItem"><a class="navLink active" href="#">Home</a></li>
+			<li class="navItem"><a class="navLink" href="#">Services</a></li>
+			<li class="navItem"><a class="navLink" href="#">Company</a></li>
+			<li class="navItem"><a class="navLink" href="#">Careers</a></li>
+			<li class="navItem"><a class="navLink" href="#">Contact us</a></li>
+		</ul>
+	</div>
+
+	<div class="sHeaderContainer"> <!-- s - for 'secondary' -->
+		<div class="sHeader">
+			<div class="sNavHeading">European Mobile Application Development Company</div>
+			<ul class="sNav">
+				<li class="sNavItem">
+					<a href="#" class="sNavLink">
+						<div class="outerNavCircle">
+							<div class="innerNavCircle">
+								<img src="img/transparent.png" alt="" class="sNavImage navImg1">
+							</div>
 						</div>
-					</div>
-					<div class="appTypeHeading">Business apps</div>
-				</div>
-				<div class="appType">
-					<div class="appTypeOutside">
-						<div class="appTypeInside">
-							<a href="#">
-								<img src="img/entertainmentApps.png" alt="Entertainment Apps"/>
-							</a>
-						</div>
-					</div>
-					<div class="appTypeHeading" style="width:150px;">Entertainment apps</div>
-				</div>
-				<div class="appType">
-					<div class="appTypeOutside">
-						<div class="appTypeInside">
-							<a href="#">
-								<img src="img/gamingApps.png" alt="Gaming Apps"/>
-								
-							</a>
-						</div>
-					</div>
-					<div class="appTypeHeading">Gaming apps</div>
-				</div>
-			</div>
-		</div>
-		<div class="content">
-			<div class="main">
-				<div class="normalText">
-					Mobile phone application development for businesses from all arount the world across all major smartphone platforms. 
-
-
-				</div>
-				<div class="normalText">
-					We can take your business mobile with fast & affordable mobile application development, which could potentially deliver your products or services to millions of people. 
-				</div>
-				<div class="emText">
-					Our first class mobile application development team will design and build an application specifically for your company!
-				</div>
-				<div class="normalText">
-					We can provide you with any mobile application (for iPhone, Android or Windows) be it a game, simple advertisement, educational or business application of any level of complexity.
-				</div>
-
-				<div class="normalText">
-					Smartphone's are everywhere and many of your customers will be using them, isn't it time you considered app development and took your business mobile? 
-				</div>
-				<div class="normalText">
-					Now is the time to take your company mobile through a dedicated & branded application. Remember, while you are thinking about it, your competitors are doing it - so don't delay - take action today.
-				</div>
-				<div class="stTextContainer">
-					<div class="stText">
-						If you're considering mobile application development, then call one of our consultants now on <span class="button">+371 2 9153367</span> to see how you could get your business mobile 
-					</div>
-				</div>
-			</div>
-			<div class="sidebar">
-				<div class="requestForm">
-					<div class="heading">Resuest for quote</div>
-					<form class="form">
-						<label for="name">Your Name:</label>
-						<input class="input" type="text" name="name" id="name"/>
-						<label for="email">E-mail</label>
-						<input class="input" type="text" name="email" id="email"/>
-						<label for="text">Message</label>
-						<textarea class="input textarea" name="text" id="text"></textarea>
-						<div class="errorMsg hidden" id="errorMsg">
-							<div>Error</div>
-							Description text goes here
-
-						</div>
-						<div class="button right" onclick="return submit(); ">SEND</div>
-					</form>
-				</div>
-				<div class="testimonials">
-					<div class="heading">Client testimonials</div>
-					<div class="clientInfo">
-						<div class="clientName">Jeff Richards</div>
-						<div class="clientCompany">YellowPages Company</div>
-						<div class="clientText">We were and still are on a mission to change the world as we know it. Six years and lots of blood, sweat, and tears later, we know how.</div>
-					</div>
-					<div class="buttonWrapper">
-						<div class="button right">Learn more</div>
-					</div>
-
-				</div>
-
-			</div>
-		</div>
-		<div class="footerContainer">
-			<div class="footer">
-				<div class="footerTop">
-					<div class="smallNav nav">
-						<ul>
-							<li class="active">
-								<a href="#">Home</a>
-							</li>
-							<li>
-								<a href="#">Services</a>
-							</li>
-							<li>
-								<a href="#">Company</a>
-							</li>
-							<li>
-								<a href="#">Careers</a>
-							</li>
-							<li>
-								<a href="#">Contact us</a>
-							</li>
-						</ul>	
-
-					</div>
-					<div class="copyright">
-						Copyright &copy; 2012 DOT44. All Rights Reserved.
-					</div>
-				</div>
-				<div class="social">
-					<a href="#" class="socialItem">
-						<img src="img/facebook.png" />
+						<span class="sNavItemName">Business Apps</span>
 					</a>
-					<a href="#" class="socialItem">
-						<img src="img/twitter.png" />
+				</li>
+				<li class="sNavItem">
+					<a href="#" class="sNavLink">
+						<div class="outerNavCircle">
+							<div class="innerNavCircle">
+								<img src="img/transparent.png" alt="" class="sNavImage navImg2">
+							</div>
+						</div>
+						<span class="sNavItemName">Entertainment Apps</span>
 					</a>
-					<a href="#" class="socialItem">
-						<img src="img/linkedin.png" />
+				</li>
+				<li class="sNavItem">
+					<a href="#" class="sNavLink">
+						<div class="outerNavCircle">
+							<div class="innerNavCircle">
+								<img src="img/transparent.png" alt="" class="sNavImage navImg3">
+							</div>
+						</div>
+						<span class="sNavItemName">Gaming Apps</span>
 					</a>
-				</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="content">
+		<div class="main">
+			<p class="normalText">Mobile phone application development for businesses from all arount the world across all major smartphone platforms. </p> 
+			<p class="normalText">We can take your business mobile with fast & affordable mobile application development, which could potentially deliver your products or services to millions of people. </p>
+			<p class="emParagraph">Our first class mobile application development team will design and build an application specifically for your company!</p>
+			<p class="normalText">We can provide you with any mobile application (for iPhone, Android or Windows) be it a game, simple advertisement, educational or business application of any level of complexity.</p>
+			<p class="normalText">Smartphone's are everywhere and many of your customers will be using them, isn't it time you considered app development and took your business mobile? </p>
+			<p class="normalText">Now is the time to take your company mobile through a dedicated & branded application. Remember, while you are thinking about it, your competitors are doing it - so don't delay - take action today.</p>
+			<div class="strongParagraphContainer">
+				<p class="strongParagraph">
+				If you're considering mobile application development, then call one of our consultants now on 
+				<span class="button"><span class="small">+371</span> 2 9153367</span> 
+				to see how you could get your business mobile
+				</p>
 			</div>
 		</div>
-			
+		<div class="sidebar">
+			<div class="requestForm">
+				<div class="heading">request for quote</div>
+				<form action="" method="post" id="form">
+					<label for="name"  id="nameLabel" class="label">Your name:</label>
+					<input type="text" class="input" name="name" id="name">
+					<label for="email" id="emailLabel" class="label">E-Mail:</label>
+					<input type="text" class="input" name="email" id="email">
+					<label for="text" id="textLabel" class="label">Message:</label>
+					<textarea name="text" class="input textarea" id="text"></textarea>
 
+					<div class="err">
+						<div class="errHeading">Error</div>
+						Description text goes here, Your email is too mainstream. Write more hip one!
+					</div>
+					<div class="button send" id="send">SEND</div>
+				</form>
+				<div class="successWrapper">
+					<div class="success">
+						<div class="successHeading">Thank you!</div>
+						Description text goes here, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, eligendi?
+					</div>
+					<div class="another">Send another message</div>
+				</div>
+			</div>
+			<div class="testimonials">
+				<div class="heading">Client Testimonials</div>
+				<div class="tClient">Jeff Richards</div>
+				<div class="tCompany">YellowPages Company</div>
+				<div class="tText">
+					We were and still are on a mission to change the world as we know it. Six years and lots of blood, sweat, and tears later, we know how.
+				</div>
+				<span class="button more">Learn More</span>
+			</div>
+		</div>
+	</div>
+	<div class="footerContainer">
+		<div class="footer">
+			<ul class="fNav">
+				<li class="navItem"><a class="navLink fActive" href="#">Home</a></li>
+				<li class="navItem"><a class="navLink" href="#">Services</a></li>
+				<li class="navItem"><a class="navLink" href="#">Company</a></li>
+				<li class="navItem"><a class="navLink" href="#">Careers</a></li>
+				<li class="navItem"><a class="navLink" href="#">Contact us</a></li>
+			</ul>
+			<div class="copyright">Copyright &copy; 2012 DOT44. All Rights Reserved.</div>
+			<div class="social">
+				<a href="#fb" class="socialLink"><img src="img/transparent.png" alt="" class="socImg socialImg1"></a>
+				<a href="#tw" class="socialLink"><img src="img/transparent.png" alt="" class="socImg socialImg2"></a>
+				<a href="#li" class="socialLink"><img src="img/transparent.png" alt="" class="socImg socialImg3"></a>
+			</div>
+		</div>
+	</div>
 
-
-
-	</body>
+	<script src="js/index.js"></script>
+</body>
 </html>
